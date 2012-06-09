@@ -1,9 +1,19 @@
 !!!
 %html
+  /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+  /[if IE 8] <html class="no-js lt-ie9" lang="en">
   %head
-    %title= full_title(yield(:title))
+    %title Openblight
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-  %body
+    %meta{:charset => "utf-8"}
+      %meta{:content => "", :name => "description"}
+        / Mobile viewport optimized: h5bp.com/viewport
+        %meta{:content => "width=device-width", :name => "viewport"}
+  %body.container{"data-action" => action_name, "data-controller" => controller_name}
+    %header.sixteen.columns.logo
+      %h1= link_to("OpenUpNyc", root_path)
     = yield
+    %footer
