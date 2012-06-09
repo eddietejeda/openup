@@ -13,7 +13,7 @@
 #
 
 class Request < ActiveRecord::Base
-  attr_accessible :department_id, :body
+  attr_accessible :department_id, :subject, :body
   belongs_to :user
   belongs_to :department
   
@@ -22,6 +22,7 @@ class Request < ActiveRecord::Base
   before_save :create_key
 
   validates :department_id, presence: true
+  validates :subject, presence: true
   validates :body, presence: true
   
   private
