@@ -13,7 +13,20 @@
 #
 
 class Request < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :department_id, :body
   belongs_to :user
+  belongs_to :department
+  
+  has_many :responses, dependent: :destroy
+  
+  before_save :create_key
 
+  validates :department_id, presence: true
+  validates :body, presence: true
+  
+  private
+  
+  def create_key
+    self.response_key = SecureRandom.urlsafe_base64(16) unless self.response_key
+  end
 end

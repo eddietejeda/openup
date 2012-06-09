@@ -12,7 +12,8 @@
 #
 
 class Response < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :status, :body
   belongs_to :request
-
+  
+  validates :status, presence: true
 end
