@@ -9,6 +9,7 @@
 #  updated_at    :datetime        not null
 #  status        :string(255)
 #  body          :text
+#  subject       :string(255)
 #
 
 require 'test_helper'
