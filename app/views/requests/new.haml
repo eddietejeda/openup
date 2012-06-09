@@ -1,0 +1,6 @@
+= form_for(@request) do |f|
+  = f.label :department_id
+  = collection_select @request, :department_id, Department.all, :id, :name
+  
+  = f.label :body
+  = f.text_field :body
