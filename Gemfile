@@ -5,6 +5,8 @@ gem 'rails', '3.2.3'
 gem 'paperclip'
 gem 'haml'
 gem 'foreigner'
+gem "devise"
+gem 'rails_admin'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,3 +45,5 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+
