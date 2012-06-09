@@ -6,11 +6,11 @@ class RequestsController < ApplicationController
   end
   
   def create
-    if !(@user = User.find_by_email(params[:"user[email]"]))
-      @user = User.create(params[:user])
+    if !(@requester = Requester.find_by_email(params[:"requester[email]"]))
+      @requester = Requester.create(params[:requester])
     end
     
-    @request = @user.requests.build(params[:request])
+    @request = @requester.requests.build(params[:request])
     
     if @request.save
       redirect_to root_path

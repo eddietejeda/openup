@@ -10,7 +10,6 @@
 admin = User.create! do |u|
 	u.email = 'eddie@codeforamerica.org'
 	u.name = 'Eddie A Tejeda'
-	u.phone = '555-555-555'
 	u.password = 'password'
 	u.password_confirmation = 'password'
 end

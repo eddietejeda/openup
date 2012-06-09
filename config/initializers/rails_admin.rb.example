@@ -1,4 +1,4 @@
-# RailsAdmin config file. Generated on June 09, 2012 18:27
+# RailsAdmin config file. Generated on June 09, 2012 19:53
 # See github.com/sferik/rails_admin for more informations
 
 RailsAdmin.config do |config|
@@ -31,10 +31,10 @@ RailsAdmin.config do |config|
 
   #  ==> Included models
   # Add all excluded models here:
-  # config.excluded_models = [Department, Request, Response, User]
+  # config.excluded_models = [Department, Request, Requester, Response, User]
 
   # Add models here if you want to go 'whitelist mode':
-  # config.included_models = [Department, Request, Response, User]
+  # config.included_models = [Department, Request, Requester, Response, User]
 
   # Application wide tried label methods for models' instances
   # config.label_methods << :description # Default is [:name, :title]
@@ -96,14 +96,32 @@ RailsAdmin.config do |config|
   # end
   # config.model Request do
   #   # Found associations:
-  #     configure :user, :belongs_to_association 
   #     configure :department, :belongs_to_association 
   #     configure :responses, :has_many_association   #   # Found columns:
   #     configure :id, :integer 
-  #     configure :user_id, :integer         # Hidden 
+  #     configure :user_id, :integer 
   #     configure :department_id, :integer         # Hidden 
-  #     configure :responded_date, :string 
+  #     configure :response_key, :string 
   #     configure :body, :text 
+  #     configure :responded_date, :string 
+  #     configure :created_at, :datetime 
+  #     configure :updated_at, :datetime 
+  #     configure :subject, :string   #   # Sections:
+  #   list do; end
+  #   export do; end
+  #   show do; end
+  #   edit do; end
+  #   create do; end
+  #   update do; end
+  # end
+  # config.model Requester do
+  #   # Found associations:
+  #     configure :requests, :has_many_association   #   # Found columns:
+  #     configure :id, :integer 
+  #     configure :email, :string 
+  #     configure :name, :string 
+  #     configure :phone, :string 
+  #     configure :mailing_address, :text 
   #     configure :created_at, :datetime 
   #     configure :updated_at, :datetime   #   # Sections:
   #   list do; end
@@ -120,7 +138,9 @@ RailsAdmin.config do |config|
   #     configure :request_id, :integer         # Hidden 
   #     configure :response_date, :date 
   #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime   #   # Sections:
+  #     configure :updated_at, :datetime 
+  #     configure :status, :string 
+  #     configure :body, :text   #   # Sections:
   #   list do; end
   #   export do; end
   #   show do; end
@@ -130,14 +150,22 @@ RailsAdmin.config do |config|
   # end
   # config.model User do
   #   # Found associations:
-  #     configure :requests, :has_many_association   #   # Found columns:
+  #   # Found columns:
   #     configure :id, :integer 
   #     configure :name, :string 
-  #     configure :email, :string 
-  #     configure :mailing_address, :string 
-  #     configure :phone, :string 
   #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime   #   # Sections:
+  #     configure :updated_at, :datetime 
+  #     configure :email, :string 
+  #     configure :password, :password         # Hidden 
+  #     configure :password_confirmation, :password         # Hidden 
+  #     configure :reset_password_token, :string         # Hidden 
+  #     configure :reset_password_sent_at, :datetime 
+  #     configure :remember_created_at, :datetime 
+  #     configure :sign_in_count, :integer 
+  #     configure :current_sign_in_at, :datetime 
+  #     configure :last_sign_in_at, :datetime 
+  #     configure :current_sign_in_ip, :string 
+  #     configure :last_sign_in_ip, :string   #   # Sections:
   #   list do; end
   #   export do; end
   #   show do; end

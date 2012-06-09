@@ -14,7 +14,7 @@
 
 class Request < ActiveRecord::Base
   attr_accessible :department_id, :subject, :body
-  belongs_to :user
+  belongs_to :requester
   belongs_to :department
   
   has_many :responses, dependent: :destroy
