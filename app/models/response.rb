@@ -8,6 +8,7 @@
 #  created_at    :datetime        not null
 #  updated_at    :datetime        not null
 #  status        :string(255)
+#  body          :text
 #
 
 class Response < ActiveRecord::Base
