@@ -1,6 +1,30 @@
-= form_for(@request) do |f|
-  = f.label :department_id
-  = collection_select @request, :department_id, Department.all, :id, :name
+= form_tag @request do
+
+
+  = label_tag :"request[department_id]"
+  = collection_select :request, :department_id, Department.all, :id, :name
   
-  = f.label :body
-  = f.text_field :body
+  %hr
+  
+  = label_tag :"request[subject]"
+  = text_field_tag :"request[subject]"
+  
+  = label_tag :"request[body]"
+  = text_area_tag :"request[body]"
+  
+  %hr
+  
+  = label_tag :"user[name]"
+  = text_field_tag :"user[name]"
+  
+  = label_tag :"user[email]"
+  = text_field_tag :"user[email]"
+  
+  = label_tag :"user[phone]"
+  = text_field_tag :"user[phone]"
+  
+  = label_tag :"user[mailing_address]"
+  = text_area_tag :"user[mailing_address]"
+  
+  
+  = submit_tag "Send Request!"
