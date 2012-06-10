@@ -6,6 +6,7 @@ class RequestsController < ApplicationController
   
   def show
     @request = Request.find(params[:id])
+    @responses = @request.responses.all
   end
 
   def new

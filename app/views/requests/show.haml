@@ -1,3 +1,5 @@
+%h3 Request
+
 %div
   %strong Department
   = @request.subject
@@ -14,7 +16,20 @@
   %strong Key
   = @request.response_key
   
-  
 %div
   %strong Status
   = @request.status
+  
+%h3 Responses
+
+- if @responses.any?
+
+  - @responses.each do |response|
+    .response{style: "margin-bottom: 20px;"}
+      %div= response.status
+      %div= response.body
+      %div= response.created_at
+  
+  
+- else
+  %p No responses.
