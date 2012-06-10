@@ -2,10 +2,14 @@
 
 %table
   %tr
-    %th Subject
+    %th Id
     %th Response Key
+    %th Subject
+    %th Status
   
   - @requests.each do |request|
     %tr
-      %td= request.subject
+      %td= request.id
       %td= request.response_key
+      %td= link_to request.subject, request
+      %td= request.status

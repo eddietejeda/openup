@@ -20,6 +20,10 @@ class Request < ActiveRecord::Base
   has_many :responses, dependent: :destroy
   
   before_save :create_key
+  
+  def status
+    self.responses.last.status if self.responses.any?
+  end
 
   validates :department_id, presence: true
   validates :subject, presence: true
