@@ -11,11 +11,10 @@ class RequestsController < ApplicationController
     end
     
     @request = @requester.requests.build(params[:request])
-    
-    if @request.save
+  
+    if @requester.save && @request.save
       redirect_to root_path
     end
-    
   end
 
 end
