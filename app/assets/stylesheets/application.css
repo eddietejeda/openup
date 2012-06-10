@@ -27,39 +27,28 @@ header{
 	position: absolute;
 }
 
+.nav{
+	font-family: 'Arvil Sans';
+	font-size: 30px;
+	font-color: #534741;
+}
 
 
 
 
-font-family: Arvil Sans
-font-size: 30px
-font-color: #534741
+h1{ 
+	font-family: 'VeveyRegular';
+	font-size: 50px;
+	font-color: #1A1A1A;
+}
 
 
-(Section Titles)
-H1: 
-font-family: VeveyRegular
-font-size: 50px
-font-color: #1A1A1A
+h2{
+	font-family: 'Ostrich Sans';
+	font-size: 24px;
+}
 
-(Sub-titles)
-H2: 
-font-family: Ostrich Sans
-font-size: 24px
-font-color: (varies)
-
-(Call to action links)
-H3:
-font-family: Arvil Sans
-font-size: 27px
-font-color: (varies)
-
-
-H4:
-
-H5:
-
-H6:
-
-Body
-
+h3{
+	font-family: 'Arvil Sans';
+	font-size: 27px;
+}
