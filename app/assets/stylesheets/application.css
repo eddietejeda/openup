@@ -20,6 +20,10 @@ header{
 	z-index: 1;
 	width: 960px;
 	margin: 0 auto;
+	margin-left: 0 !important;
+    padding-left: 0 !important;
+    position: fixed;
+    top: 0;
 }
 
 .container {
