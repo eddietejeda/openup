@@ -7,7 +7,7 @@ gem 'haml'
 gem 'foreigner'
 gem "devise"
 gem 'rails_admin'
-gem  'graphael-rails'
+gem 'graphael-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -15,18 +15,19 @@ class RequestsController < ApplicationController
   
   def create
     
-    @requester = Requester.find_by_email(params[:"requester[email]"])
+    @requester = Requester.find_by_email(params[:requester]["email"])
     
     if !@requester
       @requester = Requester.create(params[:requester])
-      redirect_to root_path unless @requester.save
+      #redirect_to root_path unless @requester.save
+      render :text => @requester.errors.each { |e| e }
     end
     
     @request = @requester.requests.build(params[:request])
   
     if @requester.save && @request.save
       RequestMailer.request_sent_email(@request).deliver
-      redirect_to root_path
+      redirect_to request_path(@request)
     end
   end
 

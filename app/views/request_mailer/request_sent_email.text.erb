@@ -2,6 +2,6 @@ Hey <%= @request.department.name %>,
 
 You have a new FOIA request on OpenUp NYC.
 
-Click here to respond: <%= @response_url %>
+Click here to respond: <%= response_page_url(@request.id, @request.response_key) %>
 
 -The OpenUp NYC Team
