@@ -1,0 +1,9 @@
+= form_for(@response) do |f|
+
+  = f.label :status
+  = f.select :status, all_statuses
+  
+  = f.label :body
+  = f.text_area :body
+  
+  = submit_tag "Send Response!"
