@@ -1,74 +1,58 @@
-!!!
-%html
-  /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
-  /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
-  /[if IE 8] <html class="no-js lt-ie9" lang="en">
-  %head
-    %title= full_title("Home")
-    = stylesheet_link_tag    "request", :media => "all"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
-    %meta{:charset => "utf-8"}
-      %meta{:content => "", :name => "description"}
-        / Mobile viewport optimized: h5bp.com/viewport
-        %meta{:content => "width=device-width", :name => "viewport"}
-  %body{"data-action" => action_name, "data-controller" => controller_name}
-    = render 'layouts/header'
-    .start-page
-      .explanation
-        OpenUp NYC is the fast, simple way to requset these records
-        from the correct NYC department. Pick which department to send your request
-        to, fill in what you're looking for, and OpenUp NYC will contact the
-        right person for you.
-      .steps
-        .easy Easy As
-        .step
-          1
-        .step
-          2
-        .step
-          3
+.start-page
+  .explanation
+    OpenUp NYC is the fast, simple way to requset these records
+    from the correct NYC department. Pick which department to send your request
+    to, fill in what you're looking for, and OpenUp NYC will contact the
+    right person for you.
+  .steps
+    .easy Easy As
+    .step
+      1
+    .step
+      2
+    .step
+      3
+  
+.get-started
+  .total-requests 12,054 requests submitted. Yours is up next.
+  .link
+    .text Get Started.
+    .triangle
+    
+.step2
+  .inner
+    .step-header
+      .step-number 2
+      .step-question What info are you looking for?
       
-    .get-started
-      .total-requests 12,054 requests submitted. Yours is up next.
-      .link
-        .text Get Started.
+    .main
+      .tips
+        .tips-header Tips of the Trade
+        .tips-content 
+          Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. Ethical ea fingerstache laborum exercitation aesthetic dolore banksy, godard biodiesel raw denim. Brooklyn lo-fi dreamcatcher, delectus nesciunt portland pinterest post-ironic ethnic.
+          
+      .form
+        %label What is your request concerning?
+        %input{type: "text"}
+        %label What is your request?
+        %textarea
+        
+      .next-section
+        .text Almost Done...
         .triangle
         
-    .step2
-      .inner
-        .step-header
-          .step-number 2
-          .step-question What info are you looking for?
+    .sidebar
+      .badge For Example
+      .tips-box
+        .tips-box-header Good
+        .tips-box-content 
+          Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. 
+      
+        .tips-box-header Not so good
+        .tips-box-content 
+          Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. 
           
-        .main
-          .tips
-            .tips-header Tips of the Trade
-            .tips-content 
-              Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. Ethical ea fingerstache laborum exercitation aesthetic dolore banksy, godard biodiesel raw denim. Brooklyn lo-fi dreamcatcher, delectus nesciunt portland pinterest post-ironic ethnic.
-              
-          .form
-            %label What is your request concerning?
-            %input{type: "text"}
-            %label What is your request?
-            %textarea
-            
-          .next-section
-            .text Almost Done...
-            .triangle
-            
-        .sidebar
-          .badge For Example
-          .tips-box
-            .tips-box-header Good
-            .tips-box-content 
-              Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. 
-          
-            .tips-box-header Not so good
-            .tips-box-content 
-              Ex nulla mollit sriracha, mcsweeney's eiusmod adipisicing terry richardson fap banh mi nisi mlkshk laboris. Retro keytar semiotics carles, blog authentic wes anderson. 
-              
-            .still-curious Still curious? Read FAQs on getting your requests answered.
+        .still-curious Still curious? Read FAQs on getting your requests answered.
+    
+    .clearfix    
         
-        .clearfix    
-            

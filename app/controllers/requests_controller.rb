@@ -1,7 +1,21 @@
 class RequestsController < ApplicationController
   
+  respond_to :html, :json, :xml
+
   def index
-    @requests = Request.all
+
+    unless params[:status].nil?
+      @requests = Response.joins(:request)
+    else
+      @requests = Request.all
+    end
+
+
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render :json => @requests.to_json }
+    end
   end
   
   def show

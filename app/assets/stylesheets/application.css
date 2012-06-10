@@ -13,3 +13,13 @@
  *= require skeleton
  *= require_tree ./frontend
  */
+
+
+body.request{
+
+	#piechart{
+
+		z-index: 1;
+	}
+
+}

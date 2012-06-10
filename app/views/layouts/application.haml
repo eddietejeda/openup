@@ -7,25 +7,13 @@
     %title= full_title(yield(:title))
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
+    = javascript_include_tag "application"
+
     %meta{:charset => "utf-8"}
-    %meta{:content => "", :name => "description"}
-    / Mobile viewport optimized: h5bp.com/viewport
-    %meta{:content => "width=device-width", :name => "viewport"}
-  %body{"data-action" => action_name, "data-controller" => controller_name, :id => "g.raphael.dmitry.baranovskiy.com", :class => "raphael"}
-    .page1
-      .container
-        %header.logo.header
-          .five.columns.alpha
-            Submit Request
-          .five.columns.alpha
-            =image_tag 'logo.png'
-          .five.columns.alpha
-            Track Request          
-        %content
-          =yield
-        %footer
-        = javascript_include_tag "application"
-        
-        %p asdf
 
-
+      %meta{:content => "", :name => "description"}
+        / Mobile viewport optimized: h5bp.com/viewport
+        %meta{:content => "width=device-width", :name => "viewport"}
+  %body{"data-action" => action_name, "data-controller" => controller_name, "class" => "#{action_name}-#{controller_name}"}
+    = render 'layouts/header'
+    =yield
