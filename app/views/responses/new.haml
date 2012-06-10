@@ -1,4 +1,4 @@
-= form_for(@response) do |f|
+= form_for @response, url: create_response_path(@request.id, @request.response_key) do |f|
 
   = f.label :status
   = f.select :status, all_statuses

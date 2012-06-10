@@ -9,6 +9,7 @@ OpenUp::Application.routes.draw do
   resources :responses, only: [:create]
   
   match 'respondto/:request_id/:response_key' => 'responses#new', as: 'response_page', via: :get
+  match 'respondto/:request_id/:response_key' => 'responses#create', as: 'create_response', via: :post
   
   root :to => 'home#index'
   
