@@ -75,4 +75,6 @@ OpenUp::Application.configure do
     :password => 'ouNYCpdf12!'
   }
   
+  config.action_mailer.default_url_options = { :host => 'www.openupnyc.com' }
+  
 end
