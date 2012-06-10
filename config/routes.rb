@@ -1,13 +1,10 @@
 OpenUp::Application.routes.draw do
-  
-
-  
-
+ 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users
 
-  resources :departments
+#  resources :departments
   resources :requests, only: [:new, :create, :index, :show]
   resources :responses, only: [:new, :create]
   
