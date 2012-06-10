@@ -2,7 +2,14 @@ body {
     margin: 0;
 }
 
-.page1 {
+
+.header {
     background: url('/assets/yellowstripe.png');
-    height: 700px;
+    height: 200px;
+    position: fixed;
+    width: 100%;
+}
+
+.page1 {
+    padding-top: 200px;
 }
