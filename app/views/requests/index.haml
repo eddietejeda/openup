@@ -1,0 +1,11 @@
+%h3 Previous Requests
+
+%table
+  %tr
+    %th Subject
+    %th Response Key
+  
+  - @requests.each do |request|
+    %tr
+      %td= request.subject
+      %td= request.response_key
