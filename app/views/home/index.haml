@@ -17,11 +17,11 @@
 
   .get-started
     .total-requests 12,054 requests submitted. Yours is up next.
-    .link
+    .link{:"data-scroll-to" => "step1"}
       .text Get Started.
       .triangle
     
-  .step1
+  .step1#step1
     .inner
       .step-header
         .step-number 1
@@ -33,13 +33,13 @@
           = collection_select :request, :department_id, Department.all, :id, :name
           
       
-      .next-section
+      .next-section{:"data-scroll-to" => "step2"}
         .text Next Step
         .triangle
       
       .clearfix
 
-  .step2
+  .step2#step2
     .inner
       .step-header
         .step-number 2
@@ -57,7 +57,7 @@
           %label What is your request?
           = text_area_tag :"request[body]"
         
-        .next-section
+        .next-section{:"data-scroll-to" => "step3"}
           .text Almost Done...
           .triangle
         
@@ -76,7 +76,7 @@
     
       .clearfix    
  
-  .step3
+  .step3#step3
     .inner
       .step-header
         .step-number 3
