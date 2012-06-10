@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require tabs
 //= require_tree .
+//= require raphael/raphael.js
+//= require g.raphael/g.raphael.js
