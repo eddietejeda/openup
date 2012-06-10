@@ -24,10 +24,17 @@ header{
     padding-left: 0 !important;
     position: fixed;
     top: 0;
+    text-align: center;
 }
 
 .container {
 	position: absolute;
+}
+
+content{
+	position: absolute;
+	top: 100px;
+
 }
 
 .nav{
