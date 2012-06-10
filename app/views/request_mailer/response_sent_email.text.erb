@@ -1,0 +1,7 @@
+Hey <%= @response.request.requester.name %>,
+
+You have a new response from <%= @response.request.department.name %> on OpenUp NYC.
+
+Click here to view it: <%= request_url(@response.request) %>
+
+-The OpenUp NYC Team

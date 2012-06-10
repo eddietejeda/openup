@@ -19,8 +19,7 @@ class RequestsController < ApplicationController
     
     if !@requester
       @requester = Requester.create(params[:requester])
-      #redirect_to root_path unless @requester.save
-      render :text => @requester.errors.each { |e| e }
+      redirect_to root_path unless @requester.save
     end
     
     @request = @requester.requests.build(params[:request])

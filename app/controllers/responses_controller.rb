@@ -10,6 +10,7 @@ class ResponsesController < ApplicationController
     @response = @request.responses.build(params[:response])
     
     if @response.save
+      RequestMailer.response_sent_email(@response).deliver
       redirect_to root_path
     end
   end
