@@ -1,0 +1,43 @@
+
+.container {
+	
+	.header {
+    	background: white;
+    	z-index: 1;
+    	width: 960px;
+    	margin: 0 auto;
+    	margin-left: 0 !important;
+        padding-left: 0 !important;
+        position: fixed;
+        top: 0;
+        text-align: center;
+    }
+    
+}
+
+content{
+	position: absolute;
+	top: 100px;
+}
+
+.nav{
+	font-family: 'Arvil Sans';
+	font-size: 30px;
+	font-color: #534741;
+}
+
+h1 { 
+	font-family: 'VeveyRegular';
+	font-size: 50px;
+	font-color: #1A1A1A;
+}
+
+h2 {
+	font-family: 'Ostrich Sans';
+	font-size: 24px;
+}
+
+h3 {
+	font-family: 'Arvil Sans';
+	font-size: 27px;
+}
