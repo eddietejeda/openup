@@ -13,14 +13,17 @@
         / Mobile viewport optimized: h5bp.com/viewport
         %meta{:content => "width=device-width", :name => "viewport"}
   %body{"data-action" => action_name, "data-controller" => controller_name}
-    .container
-      %header.logo.header
-        .five.columns.alpha
-          Submit Request
-        .five.columns.alpha
-          =image_tag 'logo.png'
-        .five.columns.alpha
-          Track Request          
-      %content
-        =yield
-      %footer
+    .page1
+      .container
+        %header.logo.header
+          .five.columns.alpha
+            Submit Request
+          .five.columns.alpha
+            =image_tag 'logo.png'
+          .five.columns.alpha
+            Track Request          
+        %content
+          =yield
+        %footer
+        
+        %p asdf
