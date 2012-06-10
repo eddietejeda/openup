@@ -1,21 +1,27 @@
+.container
+  .six
+    sadfsdfsdf sdf sdf sdfds fds fdsf adsfdfasd
 
-%h3 Previous Requests
+  .six
+    %div{:id => "piechart"}
+    %div{:id => "barchart"}
+
+  .six 
+    %h3 View Request Requests
 
 
-%div{:id => "piechart"}
-%div{:id => "barchart"}
 
-  
-%table
-  %tr
-    %th Id
-    %th Response Key
-    %th Subject
-    %th Status
-  
-  - @requests.each do |request|
-    %tr
-      %td= request.id
-      %td= request.response_key
-      %td= link_to request.subject, request
-      %td= request.status
+      
+    %table
+      %tr
+        %th Id
+        %th Response Key
+        %th Subject
+        %th Status
+      
+      - @requests.each do |request|
+        %tr
+          %td= request.id
+          %td= request.response_key
+          %td= link_to request.subject, request
+          %td= request.status
