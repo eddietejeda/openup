@@ -1,5 +1,10 @@
 %h3 Previous Requests
 
+
+%div{:id => "piechart"}
+%div{:id => "barchart"}
+
+  
 %table
   %tr
     %th Id
@@ -10,6 +15,6 @@
   - @requests.each do |request|
     %tr
       %td= request.id
-      %td= request.response_key
+      /%td= request.response_key
       %td= link_to request.subject, request
       %td= request.status

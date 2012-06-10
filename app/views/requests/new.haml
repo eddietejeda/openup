@@ -6,25 +6,33 @@
   
   %hr
   
-  = label_tag :"request[subject]"
-  = text_field_tag :"request[subject]"
+  .four  
+    = label_tag :"requester[name]"
+    = text_field_tag :"requester[name]"
+  .four
+    = label_tag :"requester[email]"
+    = text_field_tag :"requester[email]"
   
-  = label_tag :"request[body]"
-  = text_area_tag :"request[body]"
+  .four
+    = label_tag :"requester[phone]"
+    = text_field_tag :"requester[phone]"
+  
+  .four
+    = label_tag :"requester[mailing_address]"
+    = text_area_tag :"requester[mailing_address]"
   
   %hr
+    .four
+      = label_tag :"request[subject]"
+    .four
+      = text_field_tag :"request[subject]"
   
-  = label_tag :"requester[name]"
-  = text_field_tag :"requester[name]"
+    .four
+      = label_tag :"request[body]"
+    .four
+
+      = text_area_tag :"request[body]"
   
-  = label_tag :"requester[email]"
-  = text_field_tag :"requester[email]"
-  
-  = label_tag :"requester[phone]"
-  = text_field_tag :"requester[phone]"
-  
-  = label_tag :"requester[mailing_address]"
-  = text_area_tag :"requester[mailing_address]"
-  
+
   
   = submit_tag "Send Request!"
