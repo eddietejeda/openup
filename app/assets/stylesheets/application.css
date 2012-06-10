@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require base
  *= require layout
  *= require skeleton
  *= require_tree .
@@ -30,4 +29,37 @@ header{
 
 
 
+
+
+font-family: Arvil Sans
+font-size: 30px
+font-color: #534741
+
+
+(Section Titles)
+H1: 
+font-family: VeveyRegular
+font-size: 50px
+font-color: #1A1A1A
+
+(Sub-titles)
+H2: 
+font-family: Ostrich Sans
+font-size: 24px
+font-color: (varies)
+
+(Call to action links)
+H3:
+font-family: Arvil Sans
+font-size: 27px
+font-color: (varies)
+
+
+H4:
+
+H5:
+
+H6:
+
+Body
 
