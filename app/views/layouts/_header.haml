@@ -1,7 +1,10 @@
 %header.header
-  .five.columns.alpha
-    Submit Request
-  .five.columns.alpha
-    =image_tag 'logo.png'
-  .five.columns.alpha
-    Track Request       
+  .header-inner
+    .submit-request
+      .yellow-lines
+      = link_to 'Submit Request', new_request_path
+    .logo
+      =image_tag 'logo.png'
+    .track-request
+      .yellow-lines
+      = link_to 'Track Request', requests_path
