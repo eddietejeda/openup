@@ -12,9 +12,10 @@
       %meta{:content => "", :name => "description"}
         / Mobile viewport optimized: h5bp.com/viewport
         %meta{:content => "width=device-width", :name => "viewport"}
-  %body.container{"data-action" => action_name, "data-controller" => controller_name}
-    %header.sixteen.columns.logo{:style => "fixed"}
-    %content
-      %h1= link_to("OpenUpNyc", root_path)
-    = yield
-    %footer
+  %body{"data-action" => action_name, "data-controller" => controller_name}
+    .container
+      %header.sixteen.columns.logo{:style => "position: fixed"}
+        %h1= link_to("OpenUpNyc", root_path)
+      %content
+        =yield
+      %footer
