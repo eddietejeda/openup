@@ -7,7 +7,11 @@ class ResponsesController < ApplicationController
   end
   
   def create
+    @response = @request.responses.build(params[:response])
     
+    if @response.save
+      redirect_to root_path
+    end
   end
   
   private
