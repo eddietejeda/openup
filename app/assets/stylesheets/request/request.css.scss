@@ -123,26 +123,41 @@ body {
         padding-bottom: 12px;
     }
     
-    > a {
-        font-family: 'Arvil';
-        font-size: 30px;
-        color: #00A99D;
-    }
-    
-    .triangle {
-        margin: 10px auto 0;
-        width: 0;
-        height: 0;
-        border-left: 26px solid transparent;
-        border-right: 26px solid transparent;
-        border-top: 26px solid #CC3333;
+    .link {
         cursor: pointer;
-        -webkit-transition: border-top-color 0.1s linear;
-           -moz-transition: border-top-color 0.1s linear;
-            -ie-transition: border-top-color 0.1s linear;
+
+        .text {
+            font-family: 'Arvil';
+            font-size: 30px;
+            color: #00A99D;
+            padding-bottom: 10px;
+            -webkit-transition: color 0.1s linear;
+               -moz-transition: color 0.1s linear;
+                -ie-transition: color 0.1s linear;
+        }
+        
+        .triangle {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-left: 26px solid transparent;
+            border-right: 26px solid transparent;
+            border-top: 26px solid #CC3333;
+            -webkit-transition: border-top-color 0.1s linear;
+               -moz-transition: border-top-color 0.1s linear;
+                -ie-transition: border-top-color 0.1s linear;
+
+        }
         
         &:hover {
-            border-top-color: #990000;
+            .text { color: #025B52; }
+            
+            .triangle {
+                border-top-color: #990000;                
+            }
         }
+        
+        
     }
+    
 }
