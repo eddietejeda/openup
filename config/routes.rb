@@ -4,7 +4,7 @@ OpenUp::Application.routes.draw do
 
   devise_for :users
 
-  resources :departments
+#  resources :departments
   resources :requests, only: [:new, :create, :index, :show]
   
   match 'respondto/:request_id/:response_key' => 'responses#new', as: 'response_page', via: :get

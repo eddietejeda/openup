@@ -13,9 +13,21 @@
  *= require layout
  *= require skeleton
  *= require_tree .
+ */
 
-*/
 
-= require base
-= require layout
-= require skeleton
+header{
+	position: fixed;
+	background: 
+	white;
+	z-index: 1;
+}
+
+.container {
+	margin-top: 100px;
+	position: absolute;
+}
+
+
+
+
