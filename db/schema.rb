@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120610005343) do
+ActiveRecord::Schema.define(:version => 20120610023348) do
 
   create_table "departments", :force => true do |t|
     t.string   "name"
@@ -46,9 +46,8 @@ ActiveRecord::Schema.define(:version => 20120610005343) do
     t.integer  "department_id"
     t.string   "response_key"
     t.text     "body"
-    t.string   "responded_date"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "subject"
     t.integer  "requester_id"
   end
