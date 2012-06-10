@@ -71,6 +71,7 @@ OpenUp::Application.configure do
     :address => 'smtp.gmail.com',
     :port => 587,
     :authentication => :plain,
+    :domain => 'contact@openupnyc.com',
     :user_name => 'contact@openupnyc.com',
     :password => 'ouNYCpdf12!'
   }
