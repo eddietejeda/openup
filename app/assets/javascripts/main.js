@@ -6,9 +6,9 @@ function resizeHeader(){
     var pos = $(window).scrollTop();
     
     if (pos >= 60) {
-        $(".header").addClass('fixed')
+        $("body").addClass('fixed-header')
     }else{
-        $(".header").removeClass('fixed')        
+        $("body").removeClass('fixed-header')        
     }
 }
 

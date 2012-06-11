@@ -85,6 +85,29 @@ body {
     margin: 0;
     color: #444;
     font-family: 'Fjord';
+    
+    &.fixed-header {
+        
+        .start-page {
+            padding-top: 155px;
+        }
+        
+        .header {
+            position: fixed;
+            margin-top: -60px;
+
+            .header-inner .logo {
+               vertical-align: bottom;
+
+               img {
+                   height: 80px;
+                   margin-bottom: -30px;
+               }
+            }
+            
+        }
+    }
+    
 }
 
 .clearfix {
@@ -98,21 +121,7 @@ body {
     width: 100%;
     -webkit-box-shadow: 0 0 25px rgba(108, 112, 103, 0.55);
     z-index: 1000;
-    
-    &.fixed {
-        position: fixed;
-        margin-top: -60px;
         
-        .header-inner .logo {
-           vertical-align: bottom;
-           
-           img {
-               height: 80px;
-               margin-bottom: -30px;
-           }
-        }
-    }
-    
     
     .header-inner {
         text-align: center;
