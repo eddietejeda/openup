@@ -80,11 +80,11 @@ border: 0;
 padding: 0;
 }
 
-
 body {
     margin: 0;
     color: #444;
     font-family: 'Fjord';
+    min-width: 900px;
     
     &.fixed-header {
         
@@ -119,6 +119,7 @@ body {
     background: url('/assets/yellowstripe.png');
     height: 155px;
     width: 100%;
+    min-width: 900px;
     -webkit-box-shadow: 0 0 25px rgba(108, 112, 103, 0.55);
     z-index: 1000;
         
