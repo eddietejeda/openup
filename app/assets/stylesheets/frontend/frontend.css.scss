@@ -85,7 +85,6 @@ body {
     margin: 0;
     color: #444;
     font-family: 'Fjord';
-    margin-top: 155px;
 }
 
 .clearfix {
@@ -96,11 +95,23 @@ body {
 .header {
     background: url('/assets/yellowstripe.png');
     height: 155px;
-    position: fixed;
-    top: 0;
     width: 100%;
     -webkit-box-shadow: 0 0 25px rgba(108, 112, 103, 0.55);
     z-index: 1000;
+    
+    &.fixed {
+        position: fixed;
+        margin-top: -60px;
+        
+        .header-inner .logo {
+           vertical-align: bottom;
+           
+           img {
+               height: 80px;
+               margin-bottom: -30px;
+           }
+        }
+    }
     
     
     .header-inner {
@@ -112,6 +123,7 @@ body {
         
         .logo {
             padding: 25px 60px 0 60px;
+            width: 166px;
         }
         
         .submit-request, .track-request {
