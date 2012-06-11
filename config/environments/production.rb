@@ -71,9 +71,9 @@ OpenUp::Application.configure do
     :address => 'smtp.gmail.com',
     :port => 587,
     :authentication => :plain,
-    :domain => 'contact@openupnyc.com',
-    :user_name => 'contact@openupnyc.com',
-    :password => 'ouNYCpdf12!'
+    :domain => ENV['GMAIL_SMTP_USER'],
+    :user_name => ENV['GMAIL_SMTP_USER'],
+    :password => ENV['GMAIL_SMTP_PASSWORD']
   }
   
   config.action_mailer.default_url_options = { :host => 'www.openupnyc.com' }
