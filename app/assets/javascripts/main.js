@@ -1,5 +1,5 @@
 function goToByScroll(id){
-  $('html,body').animate({scrollTop: $("#"+id).offset().top - 155},'slow');
+  $('html,body').animate({scrollTop: $("#"+id).offset().top - 95},'slow');
 }
 
 function resizeHeader(){
