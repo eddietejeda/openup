@@ -32,6 +32,22 @@
           %label From which city agency are you requesting information?
           = collection_select :request, :department_id, Department.all, :id, :name
           
+        .break
+          .lines
+          .or Or
+          .lines
+        
+        .dont-know 
+          Don't know who to ask? 
+          %br
+          No worries, we'll give you a hand.
+          
+        .request-form-fields
+          %label 
+            Select the general issue area from the list below which best describes your request.
+          = select_tag "issue_area", options_for_select(['Business & Finance', 'Culture & Recreation', 'Education', 'Environment & Sanitation', 'Government Operations', 'Health', 'Housing, Land Use & Construction', 'Public Safety & Law', 'Social Services'])
+      
+          
       
       .next-section{:"data-scroll-to" => "step2"}
         .text Next Step
@@ -94,6 +110,7 @@
           = text_field_tag :"requester[phone]"
         
           %input{type: "submit", class: "button", value: "Send Request!"}
+          .disclaimer (This site is a proof-of-concept only, and does not actually submit a FOIL request!)
         
         
 

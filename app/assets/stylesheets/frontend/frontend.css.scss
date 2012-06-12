@@ -378,6 +378,39 @@ body {
             }
         }
         
+        .main {
+            
+            .break {
+                text-align: center;
+                margin-top: 15px;
+                
+                .lines {
+                    display: inline-block;
+                    width: 200px;
+                    height: 3px;
+                    border-width: 1px 0;
+                    border-style: solid;
+                    border-color: #025B52;
+                    vertical-align: top;
+                    margin-top: 6px;
+                }
+
+                .or {
+                    color: rgba(229, 229, 60, 0.7);
+                    font-family: 'Arvil';
+                    font-size: 26px;
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+                
+            }
+            
+            .dont-know {
+                text-align: center;
+                margin: 25px 0;
+            }
+            
+        }
     }
     
 }
@@ -519,6 +552,12 @@ body {
             }
         }
         
+        .main {
+            .disclaimer {
+                color: #E6E6E6;
+                font-size: 14px;
+            }
+        }
     }
     
 }
