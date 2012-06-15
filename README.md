@@ -5,11 +5,11 @@ This project won 2nd place at [PDF:Applied](http://pdfapplied.challengepost.com/
 
 The team consists of:
 
-   $ Adam Becker (GovHub)
-   $ Mollie Ruskin (Reboot)
-   $ Jeff Merritt (New York City Public Advocate Office)
-   $ Eddie Tejeda (Code for America)
-   $ Dominic (Restart Albany)
+    $ Adam Becker (GovHub)
+    $ Mollie Ruskin (Reboot)
+    $ Jeff Merritt (New York City Public Advocate Office)
+    $ Eddie Tejeda (Code for America)
+    $ Dominic (Restart Albany)
 
 ## Installation
 
