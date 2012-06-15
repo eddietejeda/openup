@@ -1,7 +1,7 @@
 # OpenUp
 
 ## History
-This project won 2nd place at [PDF:Applied] http://pdfapplied.challengepost.com/submissions Hackthon at the [http://personaldemocracy.com/] Personal Democracy Forum
+This project won 2nd place at [PDF:Applied](http://pdfapplied.challengepost.com/submissions( Hackthon at the [http://personaldemocracy.com/](Personal Democracy Forum)
 
 The team consists of:
 
