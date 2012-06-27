@@ -1,35 +1,41 @@
-%h3 Request
+.container
+  .six
+    %h3 View Recent Requests
 
-%div
-  %strong Department
-  = @request.subject
-  
-%div
-  %strong Subject
-  = @request.subject
-  
-%div
-  %strong Body
-  = @request.body
-  
-%div
-  %strong Key
-  = @request.response_key
-  
-%div
-  %strong Status
-  = @request.status
-  
-%h3 Responses
+    %div
+      .circle.grey a
+      .circle.grey a
+      .circle.grey a
 
-- if @responses.any?
+      %strong Department
+      = @request.subject
+      
+    %div
+      %strong Subject
+      = @request.subject
+      
+    %div
+      %strong Body
+      = @request.body
+      
+    %div
+      %strong Key
+      = @request.response_key
+      
+    %div
+      %strong Status
+      = @request.status
+      
+    %h3 Responses
 
-  - @responses.each do |response|
-    .response{style: "margin-bottom: 20px;"}
-      %div= response.status
-      %div= response.body
-      %div= response.created_at
-  
-  
-- else
-  %p No responses.
+    - if @responses.any?
+
+      - @responses.each do |response|
+        .response{style: "margin-bottom: 20px;"}
+          %div= response.status
+          %div= response.body
+          %div= response.created_at
+      
+      
+    - else
+      %p No responses.

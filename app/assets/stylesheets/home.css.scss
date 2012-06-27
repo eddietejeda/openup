@@ -1,6 +1,3 @@
-@font-face { font-family: Fjord; src: url('/assets/Fjord.ttf'); } 
-@font-face { font-family: Arvil; src: url('/assets/Arvil.ttf'); } 
-@font-face { font-family: Ostrich Sans; src: url('/assets/Ostrich.ttf'); } 
 
 .button,
 button,
@@ -80,35 +77,6 @@ border: 0;
 padding: 0;
 }
 
-body {
-    margin: 0;
-    color: #444;
-    font-family: 'Fjord';
-    min-width: 900px;
-    
-    &.fixed-header {
-        
-        .start-page {
-            padding-top: 155px;
-        }
-        
-        .header {
-            position: fixed;
-            margin-top: -60px;
-
-            .header-inner .logo {
-               vertical-align: bottom;
-
-               img {
-                   height: 80px;
-                   margin-bottom: -30px;
-               }
-            }
-            
-        }
-    }
-    
-}
 
 .clearfix {
     clear: both;

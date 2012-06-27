@@ -1,0 +1,45 @@
+body.request{
+	#piechart{
+		z-index: 1;
+	}
+
+}
+
+
+
+.circles {
+    text-align: center;
+    padding: 40px 0 35px;
+    
+    .easy {
+        text-transform: uppercase;
+        font-family: 'Ostrich Sans';
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    
+    .circle {
+        background-color: #00A99D;
+        width: 52px;
+        height: 52px;
+        padding: 2px 0 0 2px;
+        border-radius: 27px;
+        color: #E6E6E6;
+        font-size: 40px;
+        font-family: 'Ostrich Sans';
+        font-weight: bold;
+        text-align: center;
+        line-height: 54px;
+        display: inline-block;
+        margin: 0 4px;
+        cursor: pointer;
+        -webkit-transition: background-color 0.1s linear;
+           -moz-transition: background-color 0.1s linear;
+            -ie-transition: background-color 0.1s linear;
+        
+        
+        &:hover {
+            background-color: #025B52;
+        }
+    }
+}

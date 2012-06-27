@@ -8,21 +8,27 @@
     %div{:id => "barchart"}
 
   .six 
-    %h3 View Request Requests
+    .three
+      %h3 View Request Requests
+      %p Browse Requests by clicking around here
+    .three
+      .button Pending
+      .button Fullfiled
+      .button Approved
 
+    .three
 
-
-      
-    %table
-      %tr
-        %th Id
-        %th Response Key
-        %th Subject
-        %th Status
-      
-      - @requests.each do |request|
+    .three
+      %table
         %tr
-          %td= request.id
-          %td= request.response_key
-          %td= link_to request.subject, request
-          %td= request.status
+          %th Id
+          %th Response Key
+          %th Subject
+          %th Status
+        
+        - @requests.each do |request|
+          %tr
+            %td= request.id
+            %td= request.response_key
+            %td= link_to request.subject, request
+            %td= request.status
