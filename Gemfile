@@ -7,7 +7,9 @@ gem 'haml'
 gem 'foreigner'
 gem "devise"
 gem 'rails_admin'
-gem 'graphael-rails'
+#gem 'graphael-rails'
+gem "chosen-rails", "~> 0.9.8"
+gem 'factory_girl'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +30,21 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'annotate', '~> 2.4.1.beta' 
 end
+
+# Testing
+group :test, :development do
+  gem "test-unit"
+  gem "rspec-rails"
+  gem "shoulda"
+  gem "capybara"
+  gem "factory_girl_rails"
+  gem "faker"
+  gem "rake"
+  gem "simplecov"
+end
+
+
+
 
 group :production do
   gem 'pg'
