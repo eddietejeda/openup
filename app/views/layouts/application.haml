@@ -8,15 +8,15 @@
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
     = javascript_include_tag "application"
-
     %meta{:charset => "utf-8"}
-
-      %meta{:content => "", :name => "description"}
-        / Mobile viewport optimized: h5bp.com/viewport
-        %meta{:content => "width=device-width", :name => "viewport"}
-  %body{"data-action" => action_name, "data-controller" => controller_name, "class" => "#{action_name}-#{controller_name}"}
+    %meta{:content => "", :name => "description"}
+    / Mobile viewport optimized: h5bp.com/viewport
+    %meta{:content => "width=device-width", :name => "viewport"}
+  %body{"data-action" => action_name, "data-controller" => controller_name, "class" => "#{controller_name}-#{action_name}"}
     = render 'layouts/header'
-    =yield
+    .container
+      =yield
+    = render 'layouts/footer'
     
     :javascript
 

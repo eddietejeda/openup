@@ -3,8 +3,8 @@
     .submit-request
       .yellow-lines
       = link_to 'Submit Request', root_path
-    .logo
-      =image_tag 'logo.png'
+    .logo{:href => root_path}
+      =image_tag ('logo.png')
     .track-request
       .yellow-lines
       = link_to 'Browse Requests', requests_path
