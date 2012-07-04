@@ -3,14 +3,13 @@ class RequestsController < ApplicationController
   respond_to :html, :json, :xml
 
   def index
+    @requests = Request.includes(:department, :responses)
 
-    unless params[:status].nil?
-      @requests = Response.joins(:request)
-    else
-      @requests = Request.all
+    @departments = []
+    Department.limit(5).order('id asc').each do |dept|
+      dept.name = dept.name.gsub(/Department/, "Dept.")
+      @departments << dept
     end
-
-
 
     respond_to do |format|
       format.html # show.html.erb
@@ -29,7 +28,6 @@ class RequestsController < ApplicationController
   end
   
   def create
-    
     @requester = Requester.find_by_email(params[:requester]["email"])
     
     if !@requester
