@@ -10,13 +10,12 @@ gem 'rails_admin'
 #gem 'graphael-rails'
 gem "chosen-rails", "~> 0.9.8"
 gem 'factory_girl'
+gem 'sass-rails',   '~> 3.2.3'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'skeleton-rails'
   gem "twitter-bootstrap-rails"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
@@ -24,6 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'skeleton-rails'
 gem 'jquery-rails'
 
 group :development, :test do
