@@ -7,9 +7,33 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-admin = User.create! do |u|
+User.create! do |u|
 	u.email = 'eddie@codeforamerica.org'
 	u.name = 'Eddie A Tejeda'
 	u.password = 'password'
 	u.password_confirmation = 'password'
 end
+
+Department.create! do |d|
+	d.name = 'Department of Education'
+	d.email = 'eddie@codeforamerica.org'
+end
+
+Department.create! do |d|
+	d.name = 'Department of Labor'
+	d.email = 'eddie@codeforamerica.org'
+end
+
+Department.create! do |d|
+	d.name = 'Department of Revenue'
+	d.email = 'eddie@codeforamerica.org'
+end
+
+Department.create! do |d|
+	d.name = 'Department of Health'
+	d.email = 'eddie@codeforamerica.org'
+end
+
+
+
+
