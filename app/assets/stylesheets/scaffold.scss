@@ -37,15 +37,20 @@ body {
 }
 
 
-h3{
-    font-family: "Arvil",sans-serif;
-    font-size: 150%;
-    font-weight: normal;
-    &a{
-      color: #00A99D;
-      text-decoration: none;
 
-    }
+h1,h2,h3,h4,h5{
+  font-family: "Arvil",sans-serif;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 150%;
+  &a{
+    color: #00A99D;
+    text-decoration: none;
+
+  }
 }
 
 
@@ -155,3 +160,4 @@ div {
     list-style: square; 
   } 
 }
+

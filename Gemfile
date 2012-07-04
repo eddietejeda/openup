@@ -7,24 +7,24 @@ gem 'haml'
 gem 'foreigner'
 gem "devise"
 gem 'rails_admin'
-#gem 'graphael-rails'
-gem "chosen-rails", "~> 0.9.8"
+gem 'raphael-rails'
+gem 'chosen-rails', '~> 0.9.8'
 gem 'factory_girl'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'skeleton-rails'
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
-  gem "twitter-bootstrap-rails"
+  gem 'twitter-bootstrap-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'skeleton-rails'
-gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
@@ -42,9 +42,6 @@ group :test, :development do
   gem "rake"
   gem "simplecov"
 end
-
-
-
 
 group :production do
   gem 'pg'

@@ -10,16 +10,22 @@
         .circle.grey 
         .circle.grey 
     .right
-      %header{:style => "width: 500px"}
-        %strong 
-          Subject
-          =@request.subject
-        %strong 
-          Department
-          =@request.department.name
-        %strong 
-          Date
-          %p May 10, 2010
+      .request-header{:style => "width: 500px"}
+        .row
+          %h3{:style => "float: left"}
+            Subject
+          %span{:style => "float: left"}
+            =@request.subject
+        .row
+          %h3{:style => "float: left"}
+            Department
+          %span{:style => "float: left"}
+            =@request.department.name
+        .row
+          %h3{:style => "float: left"}
+            Date
+          %span{:style => "float: left"}
+            May 10, 2010
         
   .row
     .left

@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require tabs
-//= require piechart.js
+//= require raphael.js
+//= require piechart
 //= require chosen-jquery
 //= require init
 //= require_directory ./controllers
