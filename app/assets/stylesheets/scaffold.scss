@@ -1,0 +1,157 @@
+@font-face { font-family: Fjord; src: url('/assets/Fjord.ttf'); } 
+@font-face { font-family: Arvil; src: url('/assets/Arvil.ttf'); } 
+@font-face { font-family: Ostrich Sans; src: url('/assets/Ostrich.ttf'); } 
+
+$blue: #00A79B;
+$yellow: #D8DF21;
+$red: #bf272d;
+
+$shadowheight: 30px;
+
+body {
+  margin: 0;
+  color: #444;
+  font-family: 'Fjord';
+  min-width: 900px;
+  
+  &.fixed-header {
+    
+    .start-page {
+      padding-top: 155px;
+    }
+    
+    .header {
+      position: fixed;
+      margin-top: -60px;
+
+      .header-inner .logo {
+       vertical-align: bottom;
+
+       img {
+         height: 80px;
+         margin-bottom: -30px;
+       }
+      }        
+    }
+  } 
+}
+
+
+h3{
+    font-family: "Arvil",sans-serif;
+    font-size: 150%;
+    font-weight: normal;
+    &a{
+      color: #00A99D;
+      text-decoration: none;
+
+    }
+}
+
+
+
+
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; 
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; 
+  }
+  
+/*  &:hover {
+    color: #fff;
+    background-color: #000; 
+  } */
+}
+
+.chzn-container-single{
+  .chzn-single{
+    font-size: 25px;
+    height: 35px;
+    line-height: 33px;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px; 
+  } 
+}
+
+#notice {
+  color: $yellow; 
+}
+
+
+.container{
+  width: 100%;
+}
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; 
+}
+
+
+.button{
+
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  float: left;
+  font-family: "Arvil",sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0 20px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+
+  &.pending{
+    background: $yellow;
+  }
+
+  &.fullfiled{
+    background: $blue;
+  }
+
+  &.denied{
+    background: $red;
+  }
+
+
+  &.disabled{
+    background: #e6e6e6;
+  }
+
+
+}
+
+
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; 
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square; 
+  } 
+}

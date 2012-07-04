@@ -1,139 +1,53 @@
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	background: #eee; /* Old browsers */
-	background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
-	background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
-	background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
-	background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
-	background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
-	background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
-  border: 1px solid #aaa;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: #444;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(255, 255, 255, .75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: normal;
-  padding: 8px 10px;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-	color: #222;
-	background: #ddd; /* Old browsers */
-	background: #ddd -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
-	background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
-	background: #ddd -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
-	background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
-	background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
-	background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
-  border: 1px solid #888;
-  border-top: 1px solid #aaa;
-  border-left: 1px solid #aaa; }
-
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-	border: 1px solid #666;
-	background: #ccc; /* Old browsers */
-	background: #ccc -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
-	background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
-	background: #ccc -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
-	background: #ccc -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
-	background: #ccc -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
-	background: #ccc linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ }
-
-.button.full-width,
-button.full-width,
-input[type="submit"].full-width,
-input[type="reset"].full-width,
-input[type="button"].full-width {
-	width: 100%;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	text-align: center; }
-
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-border: 0;
-padding: 0;
-}
-
-
-.clearfix {
-    clear: both;
-}
-
-
 .header {
-    background: url('/assets/yellowstripe.png');
-    height: 155px;
-    width: 100%;
-    min-width: 900px;
-    -webkit-box-shadow: 0 0 25px rgba(108, 112, 103, 0.55);
-    z-index: 1000;
-        
-    
-    .header-inner {
-        text-align: center;
-        
-        div {
-            display: inline-block;
-        }
-        
-        .logo {
-            padding: 25px 60px 0 60px;
-            width: 166px;
-        }
-        
-        .submit-request, .track-request {
-            
-            width: 285px;
-            vertical-align: top;
-            padding-top: 55px;
-            
-            .yellow-lines {
-                width: 100%;
-                height: 3px;
-                border-width: 1px 0;
-                border-style: solid;
-                border-color: #E5E53C;
-                margin-bottom: 30px;
-            }
-            
-            a {
-                color: #00A99D;
-                font-family: 'Arvil', sans-serif;
-                font-size: 30px;
-                text-decoration: none;
-                -webkit-transition: color 0.1s linear;
-                   -moz-transition: color 0.1s linear;
-                    -ie-transition: color 0.1s linear;
-                
-                &:hover {
-                    color: #025B52;
-                }
-            }
-        }
+  background: url('/assets/yellowstripe.png');
+  height: 155px;
+  width: 100%;
+  min-width: 900px;
+  -webkit-box-shadow: 0 0 25px rgba(108, 112, 103, 0.55);
+  z-index: 1000;
+      
+  
+  .header-inner {
+    text-align: center;
+      
+    div {
+      display: inline-block;
     }
+      
+    .logo {
+      padding: 25px 60px 0 60px;
+      width: 166px;
+    }
+    
+    .submit-request, .track-request {        
+      width: 285px;
+      vertical-align: top;
+      padding-top: 55px;
+      
+      .yellow-lines {
+        width: 100%;
+        height: 3px;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #E5E53C;
+        margin-bottom: 30px;
+      }
+      
+      a {
+        color: #00A99D;
+        font-family: 'Arvil', sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+        -webkit-transition: color 0.1s linear;
+        -moz-transition: color 0.1s linear;
+        -ie-transition: color 0.1s linear;
+        
+        &:hover {
+          color: #025B52;
+        }
+      }
+    }
+  }
 }
 
 .start-page {
@@ -141,51 +55,45 @@ padding: 0;
     -webkit-box-shadow: inset 0 0 55px rgba(108, 112, 103, 0.55);
     
     .explanation {
-        width: 470px;
-        margin: 0 auto;
-        font-size: 24px;
-        line-height: 34px;
-        text-align: center;
-        padding-top: 60px;
-        
+      width: 470px;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      padding-top: 60px;      
     }
     
     .steps {
-        text-align: center;
-        padding: 40px 0 35px;
+      text-align: center;
+      padding: 40px 0 35px;
         
-        .easy {
-            text-transform: uppercase;
-            font-family: 'Ostrich Sans';
-            font-size: 22px;
-            padding-bottom: 10px;
-        }
+      .easy {
+          text-transform: uppercase;
+          font-family: 'Ostrich Sans';
+          font-size: 22px;
+          padding-bottom: 10px;
+      }
         
-        .step {
-            background-color: #00A99D;
-            width: 52px;
-            height: 52px;
-            padding: 2px 0 0 2px;
-            border-radius: 27px;
-            color: #E6E6E6;
-            font-size: 40px;
-            font-family: 'Ostrich Sans';
-            font-weight: bold;
-            text-align: center;
-            line-height: 54px;
-            display: inline-block;
-            margin: 0 4px;
-            cursor: pointer;
-            -webkit-transition: background-color 0.1s linear;
-               -moz-transition: background-color 0.1s linear;
-                -ie-transition: background-color 0.1s linear;
-            
-            
-            &:hover {
-                background-color: #025B52;
-            }
-        }
+      .step {
+          background-color: #00A99D;
+          width: 52px;
+          height: 52px;
+          padding: 2px 0 0 2px;
+          border-radius: 27px;
+          color: #E6E6E6;
+          font-size: 40px;
+          font-family: 'Ostrich Sans';
+          font-weight: bold;
+          text-align: center;
+          line-height: 54px;
+          display: inline-block;
+          margin: 0 4px;
+          cursor: pointer;
+          -webkit-transition: background-color 0.1s linear;
+          -moz-transition: background-color 0.1s linear;
+          -ie-transition: background-color 0.1s linear;
     }
+  }
 }
 
 .get-started {
