@@ -1,6 +1,4 @@
 = form_tag @request do
-
-
   = label_tag :"request[department_id]"
   = collection_select :request, :department_id, Department.all, :id, :name
   

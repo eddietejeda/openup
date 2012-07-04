@@ -1,41 +1,61 @@
-.container
-  .six
-    %h3 View Recent Requests
+.view-requests
+  %h3 
+    &laquo; 
+    =link_to 'View Recent Requests', '/'
 
-    %div
-      .circle.grey a
-      .circle.grey a
-      .circle.grey a
+  .row
+    .left
+      .circles{:style => "float: left"}
+        .circle.grey 
+        .circle.grey 
+        .circle.grey 
+    .right
+      %header{:style => "width: 500px"}
+        %strong 
+          Subject
+          =@request.subject
+        %strong 
+          Department
+          =@request.department.name
+        %strong 
+          Date
+          %p May 10, 2010
+        
+  .row
+    .left
+      %h3 Requests
+    .right
+      %div
+        %strong Subject
+        = @request.subject
+        
+      %div
+        %strong Body
+        = @request.body
+        
+      %div
+        %strong Key
+        = @request.response_key
+        
+      %div
+        %strong Status
+        = @request.status
 
-      %strong Department
-      = @request.subject
-      
-    %div
-      %strong Subject
-      = @request.subject
-      
-    %div
-      %strong Body
-      = @request.body
-      
-    %div
-      %strong Key
-      = @request.response_key
-      
-    %div
-      %strong Status
-      = @request.status
-      
-    %h3 Responses
-
-    - if @responses.any?
-
-      - @responses.each do |response|
-        .response{style: "margin-bottom: 20px;"}
-          %div= response.status
-          %div= response.body
-          %div= response.created_at
-      
-      
-    - else
-      %p No responses.
+  .row
+    .left
+      %h3 Responses
+    .right
+      - if @responses.any?
+        - @responses.each do |response|
+          .response{style: "margin-bottom: 20px;"}
+            %div= response.status
+            %div= response.body
+            %div= response.created_at
+      - else
+        %p No responses.
+  .row
+    .left
+      %h3
+        Files
+    .right
+      =image_tag "document.png"

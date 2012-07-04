@@ -1,34 +1,64 @@
-.container
-  .six
-    %p People just like you are requesting information all over the city. 
+.overview{:style => "width: 100%; background-color: #F9F1D2"}
+  .row{:style => "width: 960px; margin: 0 auto"}
+    .description
+      %span People just like you are requesting information all over the city. 
+      %br
+      %br
+      %span Take a peak at what kinds of requests your fellow New Yorkers have made, and how your city agencies are responding
+    .histogram
+      %p Agencies with highest volume of requests
+      -@departments.each do |dept|
+        .row
+          .label
+            =dept.name
+          .bar
+            .pending
+            .fulfilled
+            .approved
 
-    %p Take a peak at what kinds of requests your fellow New Yorkers have made, and how your city agencies are responding
-  .six
-    %div{:id => "piechart"}
-    %div{:id => "barchart"}
+    .six.pie-chart
+      %div#piechart
 
-  .six 
-    .three
-      %h3 View Request Requests
-      %p Browse Requests by clicking around here
-    .three
-      .button Pending
-      .button Fullfiled
-      .button Approved
+.list{:style => "width: 100%"}
+  .row{:style => "width: 960px; margin: 0 auto"}
+    .six
+      .three{:style => "float: left; text-align: right; "}
+        %h3 View Request Requests
+        .browse-requests{:style => "color: #00A99D; width: 220px; margin-left: 100px"}
+          Browse requests below by date, search by keyword or filter request by status 
+      .three{:style => "float: right;    margin: 60px 60px 0;"}
+        .button.pending Pending
+        .button.fullfiled.disabled Fullfiled
+        .button.denied.disabled Denied
 
-    .three
+    .clear
+    .six.keyword-search
+      .three
+      .three
+        %p
+          Keyword Search:
+          =text_field_tag 'Keyword'
 
-    .three
+    .six.request-table
       %table
-        %tr
-          %th Id
-          %th Response Key
-          %th Subject
-          %th Status
-        
         - @requests.each do |request|
           %tr
-            %td= request.id
-            %td= request.response_key
-            %td= link_to request.subject, request
-            %td= request.status
+            %td{:width => "300px"}
+              .circles
+                .circle
+                .circle{:class => request.status}
+                .circle
+            / %td= request.response_key
+            %td
+              .subject 
+                Subject: 
+                =link_to request.subject, request
+              .agency 
+                Agency:
+                =request.department.name
+                / =request.agency.name
+              .date 
+                Date:
+                =request.created_at
+              
+            / %td= request.status
