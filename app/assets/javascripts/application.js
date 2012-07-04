@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require tabs
-//= require raphael/raphael.js
 //= require piechart.js
 //= require chosen-jquery
 //= require init
